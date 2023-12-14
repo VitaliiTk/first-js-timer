@@ -1,0 +1,101 @@
+body {
+    background: #282C34;
+    background-image: url('https://wallpapercosmos.com/w/full/3/7/4/581173-3000x2000-desktop-hd-apricot-background-photo.jpg');
+    /* background-image: url('https://images8.alphacoders.com/723/723476.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* padding: 50px; */
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #00000070;
+    z-index: 0;
+}
+
+.wrapper {
+    background: #21252B50;
+    padding: 50px 25px;
+    max-width: 900px;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+}
+
+.img {
+    height: 200px;
+}
+
+
+
+.subtitle {
+    margin-bottom: 15px;
+}
+
+.description {
+    margin: 0 auto 20px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.counter-item {
+    background-color: #9BB735;
+    padding: 10px;
+    position: relative;
+    font-weight: 700;
+}
+
+.counter-item::after {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    font-weight: 400;
+}
+
+#days::after {
+    content: 'day';
+}
+
+#hours::after {
+    content: 'hour';
+}
+
+#minutes::after {
+    content: 'min';
+}
+
+#seconds::after {
+    content: 'sec';
+}
+
+.timeout-text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+    background-color: #78241F;
+    width: 100px;
+    margin: 0 auto;
+}
